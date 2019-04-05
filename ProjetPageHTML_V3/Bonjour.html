@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<link href="style.css" rel="stylesheet" media="all" type="text/css"> 
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="afficher_cacher_div.js"></script>
+		<title>Bonjour</title>
+	</head>
+	<body>
+		<h1>Bonjour</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+			sunt in culpa qui officia deserunt mollit anim id est laborum
+		</p>
+		
+		<p>
+		<button class="buttonform" id="bouton_texte" onclick="javascript:afficher_cacher('texte');">Afficher le formulaire</button>
+		<div id="texte" class="texte">
+			<form action="/ma-page-de-traitement" method="post">
+				
+				<div>
+					<label for="mail">E-mail :</label>
+					<input type="email" id="mail" name="user_mail">
+				</div>
+				<div>
+					<label for="name">Mot de passe :</label>
+					<input type="text" id="name" name="user_name">
+				</div>
+			</form>
+		</div>
+		</p>
+		
+		<p>
+			<button class="buttonform" value="Input Button" onclick="javascript:afficher_cacher('image');">Afficher l'image</button>
+			<div id="image">
+				<img src="http://creersonsiteweb.net/images/html.png" class="displayed">
+			</div>
+		</p>
+		
+    <script type="text/javascript">
+    //<!--
+        afficher_cacher('texte');
+        afficher_cacher('image');
+    //-->
+    </script>
+	</body>
+</html>
